@@ -1,0 +1,43 @@
+ul.progress-bar {
+    height: 300px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    &::after {
+        content: "";
+        position: absolute;
+        top:0;
+        left:5px;
+        background: #777;
+        width: 5px;
+        height: 100vh;
+    }
+    li {
+        background: #FFF;
+        border-radius: 100px;
+        width: 15px;
+        height: 15px;
+        z-index: 1;
+        position: relative;
+        &.stop ~ li {
+            background: #777;
+            &::after {
+                height: 0;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 5px;
+            background: #FFF;
+            width: 5px;
+            height: 100vh;
+        }
+    }
+}
