@@ -2,8 +2,14 @@ body {
     height: 100vh;
     margin: 0;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,p {
     line-height: 0.6em;
+}
+input[type="number"] {
+    border: none;
+    text-align: center;
+    height: 40px;
+    width: 60px;
 }
 .Container {
     width: 100%;
@@ -38,10 +44,50 @@ h1,h2,h3,h4,h5,h6 {
     height: 100%;
     background-color: red;
 }
+.InputBorder {
+    border: 1px solid gray;
+    width: 185px;
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    padding: 0px 0px 0px 0px;
+}
+.InputBorder:hover {
+    border: 1px solid red;
+}
+.PlusMinusButtons {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Courier New;
+  color: #000;
+  font-size: 20px;
+  background: #fff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+.PlusMinusButtons:hover {
+  background: #ff0040;
+  text-decoration: none;
+}
+
+.Steps {
+    display: none;
+    width: 100%;
+    margin-top: 50px;
+}
+#One {
+    display: block;
+}
 
 
 @media only screen and (max-width: 960px) {
     .SideBar {
         width: 0px;
+    }
+    .MainPage {
+        width: 100%;
     }
 }
