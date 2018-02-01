@@ -17,7 +17,7 @@
                 <div class="InnerContainer">
                     <h2>We're asking you a few questions to help find you the best space.</h2>
                     <h2>This will only take a few minutes.</h2>
-                    <div class="ProgressBarContainer"><div class="ProgressBarColor"></div></div>
+                    <div class="ProgressBarContainer"><div class="ProgressBarColor" id="ProgressColor"></div></div>
 
                     <div class="Steps" id="One">
                         <h1>Choose a size.</h1>
@@ -28,19 +28,109 @@
                             <input type="number" name="numEmployees" value="20">
                             <button type="button" name="button" class="PlusMinusButtons">+</button>
                         </div>
+                        <h3>Space Per Employee</h3>
+                        <div class="RadioInputs">
+                            <input type="radio" name="spcPerEmployee" value="100" id="Eco">
+                            <label for="Eco">Economy</label>
+                            <input type="radio" name="spcPerEmployee" value="150" id="Avg">
+                            <label for="Avg">Average</label>
+                            <input type="radio" name="spcPerEmployee" value="200" id="lrg">
+                            <label for="lrg">Spacious</label>
+                        </div>
                     </div>
                     <div class="Steps" id="Two">
-
+                        <h1>Choose a location.</h1>
+                        <p>Choose the area where your company is located to find the best location for your office.</p>
+                        <ul class="LocationList">
+                            <li>
+                                <label for="Bkln">
+                                    <input type="checkbox" name="neighborhoods" value="Brooklyn">
+                                    Brooklyn
+                                    <abbr>$</abbr>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Bkln">
+                                    <input type="checkbox" name="neighborhoods" value="Chelsea">
+                                    Chelsea
+                                    <abbr>$$</abbr>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Bkln">
+                                    <input type="checkbox" name="neighborhoods" value="Chinatown">
+                                    Chinatown
+                                    <abbr>$</abbr>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Bkln">
+                                    <input type="checkbox" name="neighborhoods" value="East Village">
+                                    East Village
+                                    <abbr>$</abbr>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Bkln">
+                                    <input type="checkbox" name="neighborhoods" value="Financial District">
+                                    Financial District
+                                    <abbr>$</abbr>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Bkln">
+                                    <input type="checkbox" name="neighborhoods" value="Flatiron District">
+                                    Flatiron District
+                                    <abbr>$$</abbr>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Bkln">
+                                    <input type="checkbox" name="neighborhoods" value="Garment District">
+                                    Garment District
+                                    <abbr>$</abbr>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Bkln">
+                                    <input type="checkbox" name="neighborhoods" value="Greenwich Village">
+                                    Greenwich Village
+                                    <abbr>$$</abbr>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Bkln">
+                                    <input type="checkbox" name="neighborhoods" value="Harlem">
+                                    Harlem
+                                    <abbr>$</abbr>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Bkln">
+                                    <input type="checkbox" name="neighborhoods" value="Hudson Square">
+                                    Hudson Square
+                                    <abbr>$</abbr>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Bkln">
+                                    <input type="checkbox" name="neighborhoods" value="Little Italy">
+                                    Little Italy
+                                    <abbr>$</abbr>
+                                </label>
+                            </li>
+                        </ul>
                     </div>
                     <div class="Steps" id="Three">
-
+                        <h1>This is step Three</h1>
                     </div>
                     <div class="Steps" id="Four">
-
+                        <h1>This is step Four</h1>
                     </div>
                     <div class="Steps" id="Five">
-
+                        <h1>This is step Five</h1>
                     </div>
+                    <button type="button" name="button"class="SiteButton" id="NextButton">1/5></button>
                 </div>
 
 
