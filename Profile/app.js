@@ -1,5 +1,8 @@
 $(document).ready(function() {
     $('#NextButton').click(toggleStep)
+    $('input[type=radio]').click(function() {
+        console.log($('#Eco').prop("checked"), $('#Avg').prop("checked"), $('#Lrg').prop("checked"));
+    })
 })
 
 var currentStep = 0;
