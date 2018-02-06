@@ -20,9 +20,14 @@
                     <div class="ProgressBarContainer"><div class="ProgressBarColor" id="ProgressColor"></div></div>
 
                     <div class="Steps" id="One">
+                        <div class="SuggestedSizeBox">
+                            <h3 class="Centered">~2000 sf</h3>
+                            <p class="Centered">Recommended Size</p>
+                        </div>
                         <h1>Choose a size.</h1>
                         <p>How many seats do you need?</p>
                         <h3>Number of seats/employees</h3>
+
                         <div class="InputBorder">
                             <button type="button" name="button" class="PlusMinusButtons">-</button>
                             <input type="number" name="numEmployees" value="20">
@@ -34,8 +39,8 @@
                             <label for="Eco">Economy</label>
                             <input type="radio" name="spcPerEmployee" value="150" id="Avg">
                             <label for="Avg">Average</label>
-                            <input type="radio" name="spcPerEmployee" value="200" id="lrg">
-                            <label for="lrg">Spacious</label>
+                            <input type="radio" name="spcPerEmployee" value="200" id="Lrg">
+                            <label for="Lrg">Spacious</label>
                         </div>
                     </div>
                     <div class="Steps" id="Two">
@@ -122,7 +127,9 @@
                         </ul>
                     </div>
                     <div class="Steps" id="Three">
-                        <h1>This is step Three</h1>
+                        <h1>Based on your size and location, here's a budget estimate.</h1>
+                        <p>Recommended budget for ~2000 sf</p>
+                        <span>$<input type="number" name="dpsf" value="50"> psf /$<input type="number" name="" value="8336"> monthly</span>
                     </div>
                     <div class="Steps" id="Four">
                         <h1>This is step Four</h1>
