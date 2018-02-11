@@ -3,6 +3,14 @@ $(document).ready(function() {
     $('input[type=radio]').click(function() {
         console.log($('#Eco').prop("checked"), $('#Avg').prop("checked"), $('#Lrg').prop("checked"));
     })
+
+    $('#minusEmployees').click(function() {
+        document.getElementById('numOfEmployees').stepDown();
+    })
+    $('#plusEmployees').click(function() {
+        document.getElementById('numOfEmployees').stepUp();
+    })
+
 })
 
 var currentStep = 0;

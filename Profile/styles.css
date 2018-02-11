@@ -144,7 +144,7 @@ input[type="number"] {
     src: url(../Fonts/LinetoRegular.woff2);
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 740pt) {
     .SideBar {
         width: 0px;
     }
